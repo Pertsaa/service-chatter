@@ -1,13 +1,9 @@
 name: CI
 
-on:
-  push:
-    branches:
-      - main
-      - 'feature/**'
+on: [push]
 
 jobs:
-  test_phaser:
+  lint-test-build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
